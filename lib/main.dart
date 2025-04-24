@@ -1,7 +1,8 @@
+import 'package:clean_architecture/config/resource/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'Modules/splash/presentation/views/splash_screen.dart';
+import 'modules/splash/presentation/views/splash_screen.dart';
 
 
 void main() {
@@ -11,10 +12,15 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+       
+      ).copyWith(
+         scaffoldBackgroundColor: AppColors.kPrimaryColor,
+      ),
       home:  SplashScreen(), // Replace with your actual splash screen widget
     ); 
      }
