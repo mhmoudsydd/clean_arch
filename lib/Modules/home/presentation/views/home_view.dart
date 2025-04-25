@@ -1,3 +1,4 @@
+import 'package:clean_architecture/modules/home/presentation/views/widgets/home_body.dart' show HomeBody;
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -7,9 +8,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
  
-      body: Center(
-        child: const Text('Welcome to the Home Screen!'),
-      ),
+      body: SafeArea(child: const HomeBody()),
     );
   }
 }

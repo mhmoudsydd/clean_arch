@@ -1,6 +1,7 @@
 import 'package:clean_architecture/config/resource/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'modules/splash/presentation/views/splash_screen.dart';
 
@@ -18,8 +19,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
          scaffoldBackgroundColor: AppColors.kPrimaryColor,
+         textTheme: GoogleFonts.montserratTextTheme(
+        ThemeData.dark().textTheme,
+         ),
       ),
-      home:  SplashScreen(), // Replace with your actual splash screen widget
+      home:  SplashScreen(),
     ); 
      }
 }
