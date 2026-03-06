@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
 extension ContextExtension on BuildContext {
-  
-  double get h =>MediaQuery.sizeOf(this).height;
-  double get w =>MediaQuery.sizeOf(this).width;
-  double  ph(double percentage) =>MediaQuery.sizeOf(this).height * percentage;
-  double  pw(double percentage) =>MediaQuery.sizeOf(this).width * percentage;
-  
+  double get h => MediaQuery.sizeOf(this).height;
+  double get w => MediaQuery.sizeOf(this).width;
+  double ph(double percentage) => MediaQuery.sizeOf(this).height * percentage;
+  double pw(double percentage) => MediaQuery.sizeOf(this).width * percentage;
+
   // TextStyle get bodyMedium => Theme.of(this).textTheme.bodyMedium!;
   // TextStyle get bodyLarge => Theme.of(this).textTheme.bodyLarge!;
   // TextStyle get bodySmall => Theme.of(this).textTheme.bodySmall!;

@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class BestSellerWidget extends StatelessWidget {
-  const BestSellerWidget({
-    super.key,
-  });
+  const BestSellerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

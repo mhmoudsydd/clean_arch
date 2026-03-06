@@ -1,4 +1,5 @@
-import 'package:clean_architecture/modules/home/presentation/views/widgets/home_body.dart' show HomeBody;
+import 'package:clean_architecture/modules/home/presentation/views/widgets/home_body.dart'
+    show HomeBody;
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -6,9 +7,6 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
- 
-      body: SafeArea(child: const HomeBody()),
-    );
+    return Scaffold(body: SafeArea(child: const HomeBody()));
   }
 }
