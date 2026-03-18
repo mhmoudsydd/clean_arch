@@ -18,7 +18,10 @@ class BookDetailBody extends StatelessWidget {
       children: [
         CustomBookDetailAppBar(),
         20.sbh,
-        ImageBookDetail().paddingSymmetric(horizontal: context.pw(0.2)),
+        ImageBookDetail(
+          image: '',
+        ).paddingSymmetric(horizontal: context.pw(0.2)),
+
         30.sbh,
 
         Text(

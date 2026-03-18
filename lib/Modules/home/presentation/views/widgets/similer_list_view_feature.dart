@@ -16,7 +16,7 @@ class SimillerListViewFeature extends StatelessWidget {
         //Back Again Here. to handle style of currentIndex card
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return ImageBookDetail(isExistButton: false).paddingOnly(right: 20);
+          return ImageBookDetail(image: 'https://example.com/image$index.jpg').paddingOnly(right: 20);
         },
       ),
     );

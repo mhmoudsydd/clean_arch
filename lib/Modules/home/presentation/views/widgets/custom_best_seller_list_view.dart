@@ -7,10 +7,11 @@ class CustomBestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SliverList(
-      delegate: SliverChildBuilderDelegate((context, index) {
+    return ListView.builder(
+      itemBuilder: (context, index) {
         return BestSellerItem().paddingSymmetric(vertical: 10);
-      }, childCount: 10),
+      },
+      itemCount: 10,
     );
   }
 }
